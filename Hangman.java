@@ -117,7 +117,7 @@ public class Hangman {
 
         try {
             List<String> words = Files.readAllLines(path);
-            int randIndex = random.nextInt(words.size() + 1);
+            int randIndex = random.nextInt(words.size());
             word = words.get(randIndex);
         } catch (IOException ex) {
             System.out.println("Something went wrong while fetching the secret word!");
