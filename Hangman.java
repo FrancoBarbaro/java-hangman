@@ -41,6 +41,7 @@ public class Hangman {
                     for (int index : occurrences) {
                         revealedLetters[index] = letter;
                     }
+                    System.out.println("Correct!");
                 }
 
                 System.out.println(revealedLetters);
